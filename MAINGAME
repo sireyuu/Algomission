@@ -1,0 +1,436 @@
+/*
+	11926848
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void displayBlade ();
+void displayPattern ();
+void displayPuzzle1 ();
+void displayStart ();
+void displayOpeningScene();
+void displayBladeScene ();
+void displayanykey();
+void displayGeorgeScene();
+void displayGeorge1 ();
+void displayGeorgeChoice2();
+void displayGeorge2 ();
+void displayGeorgeChoice();
+void displayWil ();
+void displayWilScene();
+void displayTommy();
+void displayTommyScene();
+void displayFinal ();
+void displayFinalScene ();
+void displayDream ();
+
+int main ()
+{
+	int nChoice;
+	
+    system ("cls");
+	displayStart();
+	
+	printf (">> ");
+	scanf ("%d", &nChoice);
+		
+	if (nChoice > 2)
+		printf ("\nInvalid Choice!\n");
+	else if (nChoice == 2)
+	{
+//		break;
+	}
+	else if(nChoice == 1)
+	{
+			system ("cls");
+//			displayOpeningScene();
+//			displayBladeScene ();
+//			displayPuzzle1();
+//			displayanykey();
+//			displayGeorgeScene();
+//			displayGeorgeChoice();
+//			displayanykey();
+//			displayWilScene();
+//			displayWil ();
+//			displayanykey();
+//			displayTommyScene();
+//			displayTommy();
+//			displayanykey();
+			displayFinalScene();
+			displayFinal ();
+			displayanykey();
+			displayDream();
+	}	
+	return 0;
+}
+
+void displayDream()
+{
+	printf ("You enter the portal.\n");
+	displayanykey();
+	printf ("You wake up at the alarm ringing since god knows when.\n");
+	displayanykey();
+	printf ("It was all a dream? You thought.\n");
+	displayanykey();
+	printf ("You look back at your computer with an open tab playing your favorite cartoon show\n");
+	displayanykey();
+	printf ("The Origins, Starring Ranboo the wizard and his fellow apprentices Tommy and Tubbo\n");
+	displayanykey();
+	printf ("======== END OF THE GAME ========\n\n");
+	printf ("Thank you for playing!\n\n");
+	printf ("Characters used in this story are based on the Origins SMP,\n");
+	printf ("a survival multiplayer Minecraft server (SMP) founded by content creators Wilbur Soot and TommyInnit.\n");
+}
+
+void displayFinalScene()
+{
+	printf ("The wizard congratulates you for coming this far.\n");
+	displayanykey();	
+	printf ("You ve been here before, but do you remember how to leave?\n");
+	displayanykey();
+	printf ("You got confused as you recognize the voice of the wizard, not sure how and where.\n");
+	displayanykey();
+	printf ("The wizard leads you to the puzzle room and guides you on the final steps of the game\n");
+	displayanykey();	
+	printf ("As you place the symbols on each pillar, the symbols light up. You can finally understand them. \n");
+	displayanykey();		
+}
+
+void displayFinal ()
+{
+	printf ("Wizard: I suppose you understand how to translate the passcode. Choose wisely.\n\n");
+
+	printf ("CODE: \"s<=>(r^p)^~q\"\n\n");
+	printf ("p = \"they finished this project in 2 days\"\n");
+	printf ("q = \"they got distracted\"\n");
+	printf ("r = \"they worked hard\"\n");
+	printf ("s = \"the developer will pass gematmw\"\n\n");
+		printf ("[1] The developer will pass gemat if they work hard and they finish this project in 2 days and they do not get distracted.\n");
+		printf ("[2] The developer will pass gemat if and only if they work hard or they finish this project in 2 days and they do not get distracted.\n");
+		printf ("[3] The developer will pass gemat if and only if they work hard and they finish this project in 2 days and they do not get distracted.\n");
+		
+		int nInput, flag = 1;
+
+	
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d", &nInput);
+		
+		if (nInput == 3){
+			printf ("\nCorrect! Congratulations!\n\n");
+			displayanykey();
+			printf ("You ve accomplished the game. Farewell traveler. Till we meet again\n\n");						
+			flag = 0;
+		}
+		
+		else 
+		{
+			printf ("Incorrect! Try again.\n\n");
+		}
+}
+}
+
+void displayTommyScene()
+{
+	printf ("You bid farewell as you walk through the forest.\n");
+	displayanykey();
+	printf ("You climb up a tree to see how far is the Wizards tower.\n");
+	displayanykey();
+	printf ("On top of the tree, a buzzing sound raced through your ears.\n");
+	displayanykey();
+	printf ("Bumblebee: Hey!\n");
+	displayanykey();
+	printf ("Surprised. You greeted the bumblebee whilst not letting go of the tree branch.\n");
+	displayanykey();
+	printf ("Tubbo: Hello traveler! My name is Tubbo\n");
+	displayanykey();
+	printf ("Not long after Tubbo introduces himself, a loud child flew past them.\n");
+	displayanykey();
+	printf ("Tubbo: Tommy come say hello to my friend!\n");
+	displayanykey();
+	printf ("Tommy drew near and helped you get down the tree safely.\n");
+	displayanykey();
+	printf ("Tommy: We can help you climb up the mountain till the wizards tower!\n");
+	displayanykey();
+	printf ("Tubbo: But first we love a little game!\n");
+	displayanykey();
+	printf ("Tommy & Tubbo: Lets play tic tac toe!\n");
+	displayanykey();
+}
+
+void displayTommy()
+{
+    printf("P1: Traveler (X)  vs P2: Tommy and Tubbo (O)\n\n\n");
+	printf("Traveler, choose only [1] or [4] or [8] to finish the game.\n");
+	printf("*===*===*===*\n");
+    printf("| 1 | O | O |\n");
+	printf("*===*===*===*\n");
+    printf("| 4 | X | O |\n");
+	printf("*===*===*===*\n");
+    printf("| X | 8 | X |\n");
+	printf("*===*===*===*\n");	
+
+	int flag = 1, nInput;
+	
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d",&nInput);
+	
+		if (nInput == 1){
+			printf ("\nTommy and Tubbo wins!\n\n");
+			flag = 0;
+		}
+		
+		else if (nInput == 4){
+			printf ("\nIts a draw!\n\n");
+			flag = 0;
+		}
+		
+		else if (nInput == 8){
+			printf ("\nYou won, traveler!\n\n");
+			flag = 0;
+		}
+		
+		else 
+		{
+			printf ("Incorrect! Try again.\n\n");
+		}
+	}
+	
+	printf ("Tubbo: That was a good game! You are really a good opponent-friend\n");
+	displayanykey();
+	printf ("Tubbo: I suppose you can figure this passcode out. I’ll write it down on your arm. So you won’t forget! Goodluck friend!\n");
+	displayanykey();
+	printf ("You ve acquired the last passcode. Tubbo wrote weird symbols on your arm finished of with a smiley face\n");
+	displayanykey();
+	printf ("Tommy: Lets get you up there big man!\n");
+	displayanykey();
+	printf ("Tommy and Tubbo grabs you as you feel your feet flying above the trees till the door of the Wizards tower.\n");
+	displayanykey();
+	printf ("You wave to the children who flew out in the horizon as you knock and enter the Wizards Tower\n");
+}
+
+void displayWilScene()
+{
+	printf ("You say good bye to George as you walk towards the bridge.\n");
+	displayanykey();
+	printf ("While crossing the bridge, you hear the most beautiful song ever sung.\n");
+	displayanykey();
+	printf ("You draw near the music and find a familiar pattern design\n");
+	displayanykey();
+	printf ("A Mermaid? you murmured as the mermaid sees your attention\n");
+	displayanykey();
+	printf ("Niki: Hello!Hello!Im Niki! Look at these stranger! \n");
+	displayanykey();
+	printf ("Niki: These are what humans call cups, they use them for drinking! I also found clocks!\n");
+	displayanykey();
+	printf ("You were too mesmerized by her beauty but finally snapped as you remember what you were there for.\n");
+	displayanykey();
+	printf ("You ask Niki about the puzzles.\n");
+	displayanykey();
+	printf ("Niki: Hmm? Do I know about puzzles? Oh, my friend Wil does!\n");
+	displayanykey();
+	printf ("She calls out to her friend from the ground. A phantom introduces themself as Wil.\n");
+	displayanykey();
+	printf ("Wil: Greetings, let me tell you a story about me and my friend Phil.\n");
+	displayanykey();
+	printf ("Wil: In my past life, I died in prison because of a case me and Phil did not decide well.\n");
+	displayanykey();
+	printf ("Wil: So let me ask you traveler, if you we’re in my position what will you choose?\n");
+}
+
+void displayWil ()
+{
+		printf ("\t\"What will you do? Pick wisely.\"\n\n");
+		printf ("[1] CASE A: If Phil confesses, but Wil does not, Wil will get 10 years and Phil will get 2 years.\n");
+		printf ("[2] CASE B: If Wil confesses, but Phil does not, Wil will get 3 years and Phil will get 10 years.\n");
+		printf ("[3] CASE C: If neither of them confess, then each will be sentenced to 3 years in prison. \n");
+		printf ("[4] CASE D: If both confess, then each will be sentenced for 5 years.\n");
+		
+		int nInput, flag = 1;
+
+	
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d", &nInput);
+		
+		if (nInput == 3){
+			printf ("\nCorrect!\n\n");
+			printf ("Wil:If only I said that in my trial I would still be alive, but oh well, at least Phil is safe out there.\n");	
+			displayanykey();
+			printf ("You ve really proven me how you want this passcode!\nNiki! give them the clock.\n");
+			displayanykey();
+			printf ("You ve acquired a clock! It has written symbols on it.\n");
+			displayanykey();
+			printf ("Niki & Wil: Farewell traveler, till we meet again!\n");					
+			flag = 0;
+		}
+		
+		else 
+		{
+			printf ("Incorrect! Try again.\n\n");
+		}
+}
+}
+
+void displayGeorgeScene()
+{
+	printf ("You say ahoy to Blade as you walk towards the end of the village onto to the next town.\n");
+	displayanykey();
+	printf ("Goptopia. The sign says.\n");
+	displayanykey();
+	printf ("You face a new town with growing mushrooms, fresh air and animals such as bunnies and cows moving around.\n");
+	displayanykey();
+	printf ("You see an enchanted hobbit house together with a short farmer watering their mushroom field.\n");
+	displayanykey();
+	printf ("You move closer to him as he greets you-\n");
+	displayanykey();
+}
+void displayGeorge1 ()
+{
+		printf ("Mushroom Farmer: *********************** \n");
+		printf ("What did he say? You ask to yourself.\n\n");
+		printf ("[1] Hello! My name is george, I am a mushroom farmer.\n");
+		printf ("[2] Howdy! Are you new here, in that case I m here to guide you.\n");
+		printf ("[3] Hey! Get out of my crops, these green mushrooms are fragile.\n");
+}
+
+void displayGeorgeChoice2()
+{
+	int nInput2, flag = 1;
+
+	
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d", &nInput2);
+		
+		if (nInput2 == 2){
+			printf ("\nCorrect!\n\n");
+			printf ("George: Wow! you ve proven to me that you re a good friend.\nHaving to understand my language is a great way for being safe around strange creatures.\nHeres the code.\n");
+			displayanykey();
+			printf ("You acquired the second code written on a piece of paper and his finest mushroom stew.\n");
+			displayanykey();
+			printf ("George: You stay safe out there traveler! Goodluck!\n");					
+			flag = 0;
+		}
+		
+		else 
+		{
+			printf ("Incorrect! Try again.\n\n");
+		}
+}
+}
+
+void displayGeorge2 ()
+{
+		printf ("George: *********************** \n");
+		printf ("What did he say? You ask to yourself.\n\n");
+		printf ("[1] Would you like to know about the origins of my kingdom?\n");
+		printf ("[2] Would you like some of my finest mushroom stew?\n");
+		printf ("[3] Would you like to be friends with me on your journey?\n");
+}
+
+void displayGeorgeChoice()
+{
+	int nInput, flag = 1;
+	
+	displayGeorge1();
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d", &nInput);
+		
+		if (nInput == 1){
+			printf ("\nCorrect!\n\n");
+				displayGeorge2 ();
+				displayGeorgeChoice2();
+				flag = 0;
+		}
+		else 
+			printf ("Incorrect! Try again.\n\n");	
+	}
+}
+
+void displayanykey()
+{
+	printf("\n");
+	system ("pause");
+	system ("cls");
+}
+void displayBladeScene ()
+{
+	printf ("Hey! Wake up! Ya look like you slept well haha!\n");
+	displayanykey();
+	printf ("Who am I? Well I m the ole mighty immortal Blade!\n");
+	displayanykey();
+	printf ("Blade: I havent seen you round them shores matey but alas might you be the one to answer me question.\n");
+	displayanykey();
+	printf ("Blade shows you an old photograph.\n\n");
+}
+void displayOpeningScene()
+{
+	printf ("The sounds of laughing nearby the shore comes its way towards the tavern.\n");
+	displayanykey();
+	printf ("Wooden creeks from the vintage door as pirates rush towards the bartender, asking for pints\n");
+	displayanykey();
+	printf ("You sleep soundly till a strange figure walks towards your direction.\n");
+	displayanykey();
+}
+void displayStart()
+{
+	printf ("Welcome to Algo Mission!\n\n");
+	printf ("[1] START\n");
+	printf ("[2] END\n\n");
+}
+void displayPuzzle1()
+{
+	int flag = 1;
+	
+	while (flag == 1)
+	{
+		displayPattern();
+    	displayPattern();
+    	displayPattern();
+    	displayPattern();
+    	displayPattern();
+    	displayPattern();
+    	flag = 0;
+	}
+	displayBlade ();
+}
+void displayBlade ()
+{
+	
+		printf ("\nBlade: \"What type of symmetric pattern is this?\"\n\n");
+		printf ("[1] It s called Rosette\n");
+		printf ("[2] It s called Frieze\n");
+		printf ("[3] It s called Wallpaper\n");
+		
+		int nInput, flag = 1;
+
+	
+	while (flag == 1){
+		printf (">> ");
+		scanf ("%d", &nInput);
+		
+		if (nInput == 3){
+			printf ("\nCorrect!Haha!\n\n");
+			printf ("The passcode is *. Goodluck with yer travel!\n\n");						
+			flag = 0;
+		}
+		
+		else 
+		{
+			printf ("Incorrect! Try again.\n\n");
+		}
+}
+}
+
+void displayPattern ()
+{
+	int l, i; 
+	l = 10;
+	 for (i = 0 ; i <= l ; i++)
+          printf("u");
+    printf ("\n");
+}
